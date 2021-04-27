@@ -28,26 +28,3 @@ if (document.body.contains(member_modal)) {
         }
     }
 }
-
-let under_construction_modal = document.getElementById("under_construction_modal");
-
-if (document.body.contains(under_construction_modal)) {
-    let modelDetailsButtons = document.getElementsByClassName("model_details");
-    for (let i = 0; i < modelDetailsButtons.length; i++) {
-        modelDetailsButtons[i].onclick = function () {
-            under_construction_modal.style.display = "block";
-        }
-    }
-
-    let modal_close = document.getElementsByClassName("close")[0];
-
-    modal_close.onclick = function () {
-        under_construction_modal.style.display = "none";
-    }
-
-    window.onclick = function (event) {
-        if (event.target === member_modal) {
-            under_construction_modal.style.display = "none";
-        }
-    }
-}

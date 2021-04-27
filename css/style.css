@@ -228,6 +228,47 @@ section.home {
 }
 
 /*
+    Car
+ */
+
+.car-title h3 {
+    color: var(--grey);
+}
+
+.car {
+    margin: 50px 100px 25px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: center;
+}
+
+.car .car-img {
+    position: relative;
+    width: 650px;
+    height: 350px;
+    margin: 5px;
+}
+
+.car .car-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.car .car-desc {
+    position: relative;
+    height: 300px;
+    margin: 5px;
+    width: 90%;
+    text-align: left;
+}
+
+.car .car-desc p {
+    font-size: 0.9rem;
+    color: var(--grey);
+}
+
+/*
     Accessories
  */
 
